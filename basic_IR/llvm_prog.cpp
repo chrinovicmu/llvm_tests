@@ -8,7 +8,7 @@
 #include "llvm/IR/BasicBlock.h"
 #include "llvm/IR/Constants.h"
 #include "llvm/Support/raw_ostream.h"
-
+#include <llvm-14/llvm/Support/Alignment.h>
 #include <memory>
 
 // The goal of this function is to build a Module that
@@ -87,14 +87,14 @@ std::unique_ptr<llvm::Module> myBuildModule(llvm::LLVMContext &Ctxt) {
     llvm::BasicBlock *BB12 = llvm::BasicBlock::Create(Ctxt, "bb12", FooFunc); 
 
     llvm::IRBuilder<> Builder(Ctxt);
-
+    
 
     /*populate BB */
 
     Builder.SetInsertPoint(BB); 
 
     /*allocate stack space for local variables */ 
-    
+ 
     llvm::Value *I = Builder.CreateAlloca(Int32Ty); 
     llvm::Value *I2 = Builder.CreateAlloca(Int32Ty); 
     llvm::Value *I3 = Builder.CreateAlloca(Int32Ty); 
@@ -150,7 +150,7 @@ std::unique_ptr<llvm::Module> myBuildModule(llvm::LLVMContext &Ctxt) {
     Builder.CreateCall(BarFunc, llvm::ArrayRef<llvm::Value*>{I13}, "bb12_callbar"); 
 
     Builder.CreateRetVoid(); 
-
+    
     return MyModule; 
 }
 
@@ -158,7 +158,6 @@ int main (int argc, char *argv[]) {
     
     llvm::LLVMContext Context;
     auto M = myBuildModule(Context); 
-
     std::error_code EC;
     llvm::raw_fd_stream OS("output.ll", EC);
 
@@ -169,7 +168,6 @@ int main (int argc, char *argv[]) {
     
     M->print(OS, nullptr); 
     llvm::outs() << "LLVM IR written output.ll"; 
-
 
     return 0;
 }
