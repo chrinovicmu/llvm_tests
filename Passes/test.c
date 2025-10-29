@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int foo(int a, int b) {
-    int c = a + b;
-    return c * 2;
+
+
+int add(int a, int b)
+{
+    return a + b; 
 }
+
+
+

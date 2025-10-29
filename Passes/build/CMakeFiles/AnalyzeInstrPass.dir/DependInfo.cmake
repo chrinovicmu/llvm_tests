@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/AnalyzeInstrPass.cpp" "CMakeFiles/AnalyzeInstrPass.dir/AnalyzeInstrPass.cpp.o" "gcc" "CMakeFiles/AnalyzeInstrPass.dir/AnalyzeInstrPass.cpp.o.d"
+  "/home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/AnalyzeInstrPass.cpp" "CMakeFiles/AnalyzeInstrPass.dir/AnalyzeInstrPass.cpp.o" "gcc" "CMakeFiles/AnalyzeInstrPass.dir/AnalyzeInstrPass.cpp.o.d"
   )
 
 # Targets to which this target links.

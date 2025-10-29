@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes
+CMAKE_SOURCE_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build
+CMAKE_BINARY_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build
 
 # Utility rule file for target_parser_gen.
 
@@ -78,6 +78,6 @@ CMakeFiles/target_parser_gen.dir/clean:
 .PHONY : CMakeFiles/target_parser_gen.dir/clean
 
 CMakeFiles/target_parser_gen.dir/depend:
-	cd /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build/CMakeFiles/target_parser_gen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build/CMakeFiles/target_parser_gen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/target_parser_gen.dir/depend
 

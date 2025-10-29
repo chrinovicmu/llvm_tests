@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.20)
 project(AnalyzeInstrPass)
 
@@ -11,7 +10,7 @@ include(AddLLVM)
 
 add_definitions(${LLVM_DEFINITIONS})
 
-add_llvm_library(AnalyzeInstrPass
+# CORRECTED: MODULE comes right after the target name
+add_llvm_library(AnalyzeInstrPass MODULE
     AnalyzeInstrPass.cpp
-    MODULE
 )

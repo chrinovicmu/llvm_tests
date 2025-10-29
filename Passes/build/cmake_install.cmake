@@ -1,4 +1,4 @@
-# Install script for directory: /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes
+# Install script for directory: /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "AnalyzeInstrPass" OR NOT CMAKE_INSTALL_COMP
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/AnalyzeInstrPass.so"
          RPATH "\$ORIGIN/../lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build/AnalyzeInstrPass.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE MODULE FILES "/home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build/AnalyzeInstrPass.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/AnalyzeInstrPass.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/AnalyzeInstrPass.so")
     file(RPATH_CHANGE
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

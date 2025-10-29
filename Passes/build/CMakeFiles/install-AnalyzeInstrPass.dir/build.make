@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes
+CMAKE_SOURCE_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build
+CMAKE_BINARY_DIR = /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build
 
 # Utility rule file for install-AnalyzeInstrPass.
 
@@ -67,7 +67,7 @@ include CMakeFiles/install-AnalyzeInstrPass.dir/compiler_depend.make
 include CMakeFiles/install-AnalyzeInstrPass.dir/progress.make
 
 CMakeFiles/install-AnalyzeInstrPass:
-	/usr/bin/cmake -DCMAKE_INSTALL_COMPONENT="AnalyzeInstrPass" -P /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build/cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_COMPONENT="AnalyzeInstrPass" -P /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build/cmake_install.cmake
 
 install-AnalyzeInstrPass: CMakeFiles/install-AnalyzeInstrPass
 install-AnalyzeInstrPass: CMakeFiles/install-AnalyzeInstrPass.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/install-AnalyzeInstrPass.dir/clean:
 .PHONY : CMakeFiles/install-AnalyzeInstrPass.dir/clean
 
 CMakeFiles/install-AnalyzeInstrPass.dir/depend:
-	cd /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/DU_UD_chains/Passes/build/CMakeFiles/install-AnalyzeInstrPass.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build /home/chrinovic/Workspace/LLVM_compiler_backends/llvm_tests/Passes/build/CMakeFiles/install-AnalyzeInstrPass.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/install-AnalyzeInstrPass.dir/depend
 
