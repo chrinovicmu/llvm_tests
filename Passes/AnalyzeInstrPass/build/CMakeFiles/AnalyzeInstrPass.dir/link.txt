@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -Wl,--gc-sections -shared  -o AnalyzeInstrPass.so CMakeFiles/AnalyzeInstrPass.dir/AnalyzeInstrPass.cpp.o  -Wl,-rpath,"\$ORIGIN/../lib:/home/chrinovic/llvm-build/./lib:" 
