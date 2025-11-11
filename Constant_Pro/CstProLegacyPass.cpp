@@ -8,6 +8,7 @@
 #include "llvm/IR/Instruction.h"
 #include "llvm/IR/LLVMContext.h"
 #include "llvm/Support/raw_ostream.h"
+#include <llvm-14/llvm/ADT/APFloat.h>
 #include <llvm-14/llvm/ADT/STLExtras.h>
 #include <llvm-14/llvm/IR/Constant.h>
 #include <llvm-14/llvm/IR/Value.h>
@@ -70,11 +71,20 @@ private:
 
                         if(auto *LHS = llvm::dyn_cast<llvm::ConstantFP>(Op0)){
                             if(auto *RHS = llvm::dyn_cast<llvm::ConstantFP>(Op1)){
-                            llvm
+                                llvm::APFloat Res = ComputationFP(LHS->getValue(), RHS->getValue()); 
+                                return llvm::ConstantFP::get(Instr.getType()), Res); 
                             } 
-                    }
+                        }
+                        
+                        return nullptr; 
+                    }; 
+
+                
+                switch()
+                        
+
+                 }
             }
         }
     }
-}
 }
